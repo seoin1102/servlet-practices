@@ -12,7 +12,7 @@
 	vo.setLastName(lastName);
 	vo.setEmail(email);
 	new EmaillistDao().insert(vo);
-	response.sendRedirect("index.jsp");
+	response.sendRedirect("/emaillist01");
 %>
 <!DOCTYPE html>
 <html>

@@ -15,7 +15,7 @@
 	</properties>
 
 	<build>
-		<finalName>emaillist01</finalName>
+		<finalName>emaillist02</finalName>
 		<plugins>
 			<plugin>
 			    <groupId>org.apache.maven.plugins</groupId>
