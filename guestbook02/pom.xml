@@ -15,29 +15,7 @@
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
  
-	<build>
-		<finalName>guestbook02</finalName>
-		<plugins>
-			<plugin>
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-war-plugin</artifactId>
-			    <version>3.3.2</version>
-			</plugin>
-			<plugin>
-			    <groupId>org.codehaus.mojo</groupId>
-			    <artifactId>tomcat-maven-plugin</artifactId>
-			    <version>1.1</version>
-			    <configuration>
-			    	<url>http://192.168.10.46:8080/manager/text</url>
-			    	<path>/guestbook02</path>
-			    	<username>admin</username>
-			    	<password>manager</password>
-			    </configuration>
-			</plugin>	
-		</plugins>
-		
-	
-	</build>
+
 	<dependencies>
 	<dependency>
 		<groupId>org.mariadb.jdbc</groupId>
@@ -66,4 +44,28 @@
 		    <scope>provided</scope>
 		</dependency>  
 	</dependencies>
+	
+		<build>
+		<finalName>guestbook02</finalName>
+		<plugins>
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-war-plugin</artifactId>
+			    <version>3.3.2</version>
+			</plugin>
+			<plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+			    <artifactId>tomcat-maven-plugin</artifactId>
+			    <version>1.1</version>
+			    <configuration>
+			    	<url>http://192.168.10.46:8080/manager/text</url>
+			    	<path>/guestbook02</path>
+			    	<username>admin</username>
+			    	<password>manager</password>
+			    </configuration>
+			</plugin>	
+		</plugins>
+		
+	
+	</build>
 </project>
